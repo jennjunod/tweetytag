@@ -1,0 +1,11 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("mysql://avnadmin:AVNS_9iFMAdQLCnZg77A6WaU@mysql-21d62a09-teachjenntech-815a.aivencloud.com:20336/defaultdb?ssl-mode=REQUIRED")
+}
