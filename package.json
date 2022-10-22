@@ -19,5 +19,8 @@
   "homepage": "https://github.com/jennjunod/tweetytag#readme",
   "devDependencies": {
     "prisma": "^4.5.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.5.0"
   }
 }
