@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { PrismaClient } from "@prisma/client"
 
 type ResponseData = {
   data: string
@@ -17,5 +18,5 @@ export default function handler(
   //}
 
   // Found the name.
-  res.json({ data: `${body.first} ${body.last}` })
+  res.json({ data: `${body.first}` })
 }

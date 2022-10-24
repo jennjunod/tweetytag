@@ -32,7 +32,7 @@ export default function PageWithJSbasedForm() {
     // Get the response data from server as JSON.
     // If server returns the name submitted, that means the form works.
     const result = await response.json()
-    alert(`Is this your Twitter handle? ${result.data}`)
+    alert(`Is this your Twitter handle? ${(form.twitterHandle.value)}`)
   }
   return (
     <div className="container">
