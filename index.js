@@ -7,7 +7,7 @@ const prisma = new PrismaClient()
 async function main() {
     await prisma.twitterHandle.create({
         data: {
-          twitterHandle: form.twitterHandle.value
+          twitterHandle: '@jennjunod'
         },
       })
     
