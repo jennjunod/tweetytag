@@ -1,12 +1,13 @@
 const { PrismaClient } = require('@prisma/client')
 //import type { SomeThing } from "./next-forms-app/pages/api/form";
 
+
 const prisma = new PrismaClient()
 
 async function main() {
     await prisma.twitterHandle.create({
         data: {
-            twitterHandle: '@jennjunod',
+          twitterHandle: form.twitterHandle.value
         },
       })
     
